@@ -10,7 +10,6 @@ interface PageProps extends ConnectProps {
 }
 
 const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
-
   // 这里发起了初始化请求
   useEffect(() => {
     dispatch!({

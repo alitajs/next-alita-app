@@ -2,11 +2,7 @@ import { AnyAction, EffectsCommandMap, RouterTypes, match } from 'alita';
 import { IndexModelState } from './index';
 import { SettingsModelState } from './settings';
 import { ListModelState } from './list';
-export {
-  ListModelState,
-  SettingsModelState,
-  IndexModelState
-};
+export { ListModelState, SettingsModelState, IndexModelState };
 
 export interface MenuDataItem {
   authority?: string[] | string;
@@ -32,12 +28,14 @@ export type Effect = (
  * @type P: Type of payload
  * @type C: Type of callback
  */
-export type Dispatch = <P = any, C = (payload: P) => void>(action: {
-  type: string;
-  payload?: P;
-  callback?: C;
-  [key: string]: any;
-}) => any;
+export type Dispatch = <P = any, C = (payload: P) => void>(
+  action: {
+    type: string;
+    payload?: P;
+    callback?: C;
+    [key: string]: any;
+  },
+) => any;
 
 export interface Loading {
   global: boolean;

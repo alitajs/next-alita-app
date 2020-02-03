@@ -1,4 +1,3 @@
-
 import { Reducer } from 'redux';
 import { query } from '@/services/api';
 import { Effect } from '@/models/connect';
@@ -18,7 +17,6 @@ export interface SettingsModelType {
   };
 }
 
-
 const SettingsModel: SettingsModelType = {
   namespace: 'settings',
 
@@ -29,7 +27,7 @@ const SettingsModel: SettingsModelType = {
   effects: {
     *query({ payload }, { call, put }) {
       const data = yield call(query, payload);
-      console.log(data)
+      console.log(data);
       yield put({
         type: 'save',
         payload: { name: data.text },
