@@ -1,8 +1,12 @@
 import { AnyAction, EffectsCommandMap, RouterTypes, match } from 'alita';
-
 import { IndexModelState } from './index';
-
-export { IndexModelState };
+import { SettingsModelState } from './settings';
+import { ListModelState } from './list';
+export {
+  ListModelState,
+  SettingsModelState,
+  IndexModelState
+};
 
 export interface MenuDataItem {
   authority?: string[] | string;
@@ -40,10 +44,16 @@ export interface Loading {
   effects: { [key: string]: boolean | undefined };
   models: {
     index?: boolean;
+    list?: boolean;
+    settings?: boolean;
   };
 }
 
 export interface ConnectState {
+  list?: ListModelState;
+
+  settings?: SettingsModelState;
+
   index?: IndexModelState;
 }
 

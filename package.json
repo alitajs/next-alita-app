@@ -20,7 +20,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "alita": "*"
+    "@alitajs/alita-layout": "^1.0.9",
+    "alita": "1.4.3-alpha.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",

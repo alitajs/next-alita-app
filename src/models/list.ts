@@ -1,23 +1,26 @@
-import { Effect } from '@/models/connect';
+
 import { Reducer } from 'redux';
 import { query } from '@/services/api';
-export interface IndexModelState {
+import { Effect } from '@/models/connect';
+
+export interface ListModelState {
   name: string;
 }
 
-export interface IndexModelType {
-  namespace: 'index';
-  state: IndexModelState;
+export interface ListModelType {
+  namespace: 'list';
+  state: ListModelState;
   effects: {
     query: Effect;
   };
   reducers: {
-    save: Reducer<IndexModelState>;
+    save: Reducer<ListModelState>;
   };
 }
 
-const IndexModel: IndexModelType = {
-  namespace: 'index',
+
+const ListModel: ListModelType = {
+  namespace: 'list',
 
   state: {
     name: '',
@@ -26,7 +29,7 @@ const IndexModel: IndexModelType = {
   effects: {
     *query({ payload }, { call, put }) {
       const data = yield call(query, payload);
-      console.log(data);
+      console.log(data)
       yield put({
         type: 'save',
         payload: { name: data.text },
@@ -43,4 +46,4 @@ const IndexModel: IndexModelType = {
   },
 };
 
-export default IndexModel;
+export default ListModel;
