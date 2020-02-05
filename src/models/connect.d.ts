@@ -2,6 +2,7 @@ import { AnyAction, EffectsCommandMap, RouterTypes, match } from 'alita';
 import { IndexModelState } from './index';
 import { SettingsModelState } from './settings';
 import { ListModelState } from './list';
+
 export { ListModelState, SettingsModelState, IndexModelState };
 
 export interface MenuDataItem {
@@ -49,9 +50,7 @@ export interface Loading {
 
 export interface ConnectState {
   list?: ListModelState;
-
   settings?: SettingsModelState;
-
   index?: IndexModelState;
 }
 
