@@ -1,9 +1,8 @@
-import { connect } from 'dva';
 import React, { FC, useEffect } from 'react';
 import { List } from 'antd-mobile';
 import { queryList } from '@/services/api';
 import LoadMoreListView from '@alitajs/list-view';
-import { ListModelState, ConnectProps } from '@/models/connect';
+import { ListModelState, ConnectProps, connect } from 'alita';
 import Logo from '@/assets/logo.png';
 
 import styles from './index.less';
