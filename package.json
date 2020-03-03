@@ -7,7 +7,7 @@
   "scripts": {
     "start": "alita dev",
     "build": "alita build",
-    "cordova-init":"alita cordova --init",
+    "cordova-init": "alita cordova --init",
     "cordova-add-ios": "alita cordova --ios",
     "cordova-add-android": "alita cordova --android",
     "start-ios": "alita dev",
@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "@alitajs/list-view": "^0.0.4",
-    "alita": "^2.0.5"
+    "alita": "^2.0.5-beta.4"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
