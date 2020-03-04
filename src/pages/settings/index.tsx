@@ -10,7 +10,7 @@ interface PageProps extends ConnectProps {
 
 const SettingsPage: FC<PageProps> = ({ settings, dispatch, location }) => {
   const onLeftClick = () => {
-    console.log('click left');
+    alert('click left');
   };
   useEffect(() => {
     setPageNavBar({
@@ -23,13 +23,13 @@ const SettingsPage: FC<PageProps> = ({ settings, dispatch, location }) => {
         ],
       },
     });
-    dispatch!({
-      type: 'settings/query',
-    });
+    // dispatch!({
+    //   type: 'settings/query',
+    // });
   }, []);
-  const { name } = settings;
+  // const { name } = settings;
 
-  return <div className={styles.center}>Hello {name}</div>;
+  return <div className={styles.center}>Settings Page</div>;
 };
 
 export default connect(({ settings }: { settings: SettingsModelState }) => ({ settings }))(
