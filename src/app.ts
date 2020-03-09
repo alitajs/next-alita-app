@@ -1,11 +1,5 @@
 import { ResponseError } from 'umi-request';
-import {
-  NavBarProps,
-  TitleListItem,
-  NarBarListItem,
-  TarBarProps,
-  TabBarListItem,
-} from '@alitajs/alita-layout';
+import { NavBarProps, TitleListItem, NavBarListItem, TabBarProps, TabBarListItem } from 'alita';
 
 import HomeGary from './assets/demoIcon/home.png';
 import HomeBlue from './assets/demoIcon/home1.png';
@@ -37,7 +31,7 @@ const titleList: TitleListItem[] = [
     title: '设置',
   },
 ];
-const navList: NarBarListItem[] = [];
+const navList: NavBarListItem[] = [];
 const navBar: NavBarProps = {
   navList,
   fixed: true,
@@ -75,7 +69,7 @@ const tabList: TabBarListItem[] = [
   },
 ];
 
-const tabBar: TarBarProps = {
+const tabBar: TabBarProps = {
   color: `#999999`,
   selectedColor: '#00A0FF',
   borderStyle: 'white',
