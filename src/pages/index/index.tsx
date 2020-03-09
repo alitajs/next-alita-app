@@ -19,7 +19,17 @@ const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
   // }, []);
   // 注意，上面这里写空数组，表示初始化，如果需要监听某个字段变化再发起请求，可以在这里写明
   // const { name } = index;
-  return <div className={styles.center}>Hello Alita</div>;
+  return (
+    <div className={styles.center}>
+      Hello Alita
+      <br />
+      欢迎使用 Alita ，请随意在下方 Tabs 组件中切换页面，
+      <br />
+      其中列表页包含了状态保持的特性，你可以切换页面体验。
+      <br />
+      并在点击列表页任意Item 之后，解除一次状态保持。
+    </div>
+  );
 };
 
 export default connect(({ index }: { index: IndexModelState }) => ({ index }))(IndexPage);
