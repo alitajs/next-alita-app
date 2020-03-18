@@ -27,7 +27,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@alitajs/list-view": "^0.0.4",
+    "@alitajs/list-view": "^0.2.0",
     "alita": "^2.1.5"
   },
   "gitHooks": {

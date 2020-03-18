@@ -38,12 +38,13 @@ const ListPage: FC<PageProps> = ({ list, dispatch }) => {
     <>
       Model Name:{name}
       <LoadMoreListView
+        isTabsPage
         requestFunc={queryList}
         renderRow={renderRow}
         requestParams={{
           abc: '123',
           token: 'alita',
-          pageSize: 0,
+          pageSize: 10,
           offset: 0,
         }}
       />
