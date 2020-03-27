@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 0,
     'jsx-a11y/alt-text': 0,
+    'no-unused-expressions': 0,
   },
   globals: {},
 };

@@ -1,5 +1,6 @@
 import { Effect, Reducer } from 'alita';
 import { query } from '@/services/api';
+
 export interface IndexModelState {
   name: string;
 }
