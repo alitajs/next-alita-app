@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "@alitajs/list-view": "^0.2.0",
-    "alita": "^2.1.5"
+    "alita": "2.5.16-beta.1"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -45,6 +45,7 @@
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@umijs/fabric": "2.0.0",
+    "auto-skeleton-plugin": "^0.0.0-beta.2",
     "chalk": "^3.0.0",
     "check-prettier": "^1.0.3",
     "cross-env": "^6.0.3",

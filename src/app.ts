@@ -8,6 +8,23 @@ import ListBlue from './assets/demoIcon/list1.png';
 import SetGary from './assets/demoIcon/setting.png';
 import SetBlue from './assets/demoIcon/setting1.png';
 
+import { getDvaApp } from 'umi';
+
+export async function patchRoutes() {}
+export function render(oldRender) {
+  console.log(getDvaApp());
+  setTimeout(
+    () =>
+      getDvaApp()._store.dispatch({
+        type: 'index/query',
+        payload: {},
+      }),
+    10,
+  );
+
+  oldRender();
+}
+
 export const request = {
   prefix: '',
   method: 'post',
