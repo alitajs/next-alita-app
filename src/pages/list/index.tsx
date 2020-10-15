@@ -135,7 +135,7 @@ const dataSource = [
 ];
 
 const asyncFn = ({ pageSize, offset }): Promise<Result> =>
-  new Promise(resolve => {
+  new Promise((resolve) => {
     setTimeout(() => {
       resolve({
         total: dataSource.length,
