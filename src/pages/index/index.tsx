@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { IndexModelState, ConnectProps, connect } from 'alita';
+import { Button } from 'antd-mobile';
 import styles from './index.less';
 
 interface PageProps extends ConnectProps {
@@ -7,6 +8,7 @@ interface PageProps extends ConnectProps {
 }
 
 const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
+  const [showImg, setShowImg] = useState('');
   // 这里发起了初始化请求
   // useEffect(() => {
   //   dispatch!({
@@ -18,10 +20,27 @@ const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
   //   };
   // }, []);
   // 注意，上面这里写空数组，表示初始化，如果需要监听某个字段变化再发起请求，可以在这里写明
-  const { name = '' } = index;
+
   return (
     <div className={styles.center}>
-      {name}
+      <Button
+        onClick={() => {
+          window.alita.device.platform().then((data) => console.log(data));
+        }}
+      >
+        获取平台
+      </Button>
+      <Button
+        onClick={() => {
+          window.alita.media.chooseImage().then((data) => {
+            console.log(data);
+            setShowImg(data.files[0].path);
+          });
+        }}
+      >
+        获取图片
+      </Button>
+      <img src={showImg} style={{ width: '100%' }} />
       <p className={styles.title}>Hello Alita003</p>
       <p>
         1、列表页包含了<span>状态保持</span>的特性，你可以切换页面体验。 并在点击列表页任意 Item

@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "@alitajs/list-view": "^0.2.0",
-    "alita": "2.5.16-beta.1"
+    "alita": "2.5.16-beta.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
