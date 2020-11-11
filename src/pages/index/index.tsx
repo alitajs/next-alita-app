@@ -34,7 +34,7 @@ const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
         onClick={() => {
           window.alita.media.chooseImage().then((data) => {
             console.log(data);
-            setShowImg(data.files[0].path);
+            setShowImg(data.files[0].thumbnail);
           });
         }}
       >
