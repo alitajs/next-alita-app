@@ -54,5 +54,10 @@
     "prettier": "^2.0.2",
     "stylelint": "^12.0.1",
     "yorkie": "^2.0.0"
+  },
+  "create-umi": {
+    "ignore": [
+      "create-umi-ignore.js"
+    ]
   }
 }
