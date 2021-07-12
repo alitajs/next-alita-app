@@ -2,7 +2,7 @@ import React, { FC, useEffect } from 'react';
 import { List } from 'antd-mobile';
 import { queryList } from '@/services/api';
 import LoadMoreListView from '@alitajs/list-view';
-import { ListModelState, ConnectProps, connect, dropByCacheKey } from 'alita';
+import { ListModelState, ConnectProps, connect, dropByCacheKey } from 'umi';
 import Logo from '@/assets/logo.png';
 
 import styles from './index.less';
@@ -31,7 +31,7 @@ const ListPage: FC<PageProps> = ({ list, dispatch }) => {
         dropByCacheKey('/list');
       }}
     >
-      {rowData.title} <Brief>{rowID}</Brief>
+      6666666 <Brief>{rowID}</Brief>
     </Item>
   );
   return (

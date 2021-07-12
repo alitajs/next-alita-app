@@ -1,5 +1,5 @@
 import { query } from '@/services/api';
-import { Effect, Reducer } from 'alita';
+import { Effect, Reducer } from 'umi';
 
 export interface ListModelState {
   name: string;
@@ -26,7 +26,6 @@ const ListModel: ListModelType = {
   effects: {
     *query({ payload }, { call, put }) {
       const data = yield call(query, payload);
-      console.log(data);
       yield put({
         type: 'save',
         payload: { name: data.text },

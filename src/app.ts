@@ -1,5 +1,5 @@
 import { ResponseError } from 'umi-request';
-import { NavBarProps, TitleListItem, NavBarListItem, TabBarProps, TabBarListItem } from 'alita';
+import { NavBarProps, TitleListItem, NavBarListItem, TabBarProps, TabBarListItem } from 'umi';
 
 import HomeGary from './assets/demoIcon/home.png';
 import HomeBlue from './assets/demoIcon/home1.png';

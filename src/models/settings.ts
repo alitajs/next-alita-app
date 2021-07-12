@@ -1,5 +1,5 @@
 import { query } from '@/services/api';
-import { Effect, Reducer } from 'alita';
+import { Effect, Reducer } from 'umi';
 
 export interface SettingsModelState {
   name: string;

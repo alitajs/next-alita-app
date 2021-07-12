@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { IndexModelState, ConnectProps, connect } from 'alita';
+import { IndexModelState, ConnectProps, connect } from 'umi';
 import styles from './index.less';
 
 interface PageProps extends ConnectProps {

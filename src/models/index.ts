@@ -1,4 +1,4 @@
-import { Effect, Reducer } from 'alita';
+import { Effect, Reducer } from 'umi';
 import { query } from '@/services/api';
 
 export interface IndexModelState {

@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { setPageNavBar, connect, SettingsModelState, ConnectProps } from 'alita';
+import { setPageNavBar, connect, SettingsModelState, ConnectProps } from 'umi';
 import { Icon } from 'antd-mobile';
 
 import styles from './index.less';

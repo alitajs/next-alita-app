@@ -5,42 +5,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "alita dev",
-    "build": "alita build",
-    "cordova-init": "alita cordova --init",
-    "cordova-add-ios": "alita cordova --ios",
-    "cordova-add-android": "alita cordova --android",
-    "start-ios": "alita dev",
-    "build-ios": "alita build",
-    "start-android": "cross-env CORDOVA=android alita dev",
-    "build-android": "cross-env CORDOVA=android alita build",
-    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
-    "lint-staged": "lint-staged",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
-    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
-    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
-    "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
-    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
-    "prettier": "prettier -c --write \"**/*\""
+    "start": "umi dev",
+    "build": "umi build"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@alitajs/list-view": "^0.2.0",
-    "alita": "^2.1.5"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js"
-  },
-  "lint-staged": {
-    "**/*.less": "stylelint --syntax less",
-    "**/*.{js,jsx}": "npm run lint-staged:js",
-    "**/*.{js,ts,tsx,json,jsx,less}": [
-      "npm run prettier",
-      "git add"
-    ]
+    "@alitajs/umi-presets-alita": "2.8.7-alpha.2",
+    "umi": "3.5.5"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
