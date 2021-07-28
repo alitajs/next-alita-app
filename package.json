@@ -27,8 +27,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@alita/react": "^0.0.1",
     "@alitajs/list-view": "^0.2.0",
-    "alita": "^2.1.5"
+    "alita": "2.8.11",
+    "antd-mobile": "*"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",

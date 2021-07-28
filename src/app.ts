@@ -34,7 +34,7 @@ const titleList: TitleListItem[] = [
 const navList: NavBarListItem[] = [];
 const navBar: NavBarProps = {
   navList,
-  fixed: true,
+  fixed: false,
   onLeftClick: () => {
     // router.goBack();
   },

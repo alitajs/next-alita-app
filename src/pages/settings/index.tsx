@@ -16,6 +16,7 @@ const SettingsPage: FC<PageProps> = ({ settings, dispatch, location }) => {
     setPageNavBar({
       pagePath: location.pathname,
       navBar: {
+        pageBackground: '#FF0000',
         onLeftClick,
         rightContent: [
           <Icon key="0" type="search" style={{ marginRight: '16px' }} />,

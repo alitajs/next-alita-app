@@ -38,6 +38,7 @@ const ListPage: FC<PageProps> = ({ list, dispatch }) => {
     <>
       Model Name:{name}
       <LoadMoreListView
+        height="11rem"
         isTabsPage
         requestFunc={queryList}
         renderRow={renderRow}
@@ -48,6 +49,7 @@ const ListPage: FC<PageProps> = ({ list, dispatch }) => {
           offset: 0,
         }}
       />
+      <div style={{ fontSize: '1000px' }}>123123</div>
     </>
   );
 };
