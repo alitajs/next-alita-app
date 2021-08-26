@@ -1,3 +1,5 @@
 /config
 .history
 /scripts
+./server.js
+./serverHeader.js
