@@ -1,7 +1,6 @@
 import React, { FC, useEffect } from 'react';
 import { setPageNavBar, connect, SettingsModelState, ConnectProps } from 'alita';
 import { Icon } from 'antd-mobile';
-
 import styles from './index.less';
 
 interface PageProps extends ConnectProps {
@@ -12,11 +11,12 @@ const SettingsPage: FC<PageProps> = ({ settings, dispatch, location }) => {
   const onLeftClick = () => {
     console.log('click left');
   };
+
   useEffect(() => {
-    setPageNavBar({
+    setPageNavBar?.({
       pagePath: location.pathname,
       navBar: {
-        pageBackground: '#FF0000',
+        pageBackground: '#000000',
         onLeftClick,
         rightContent: [
           <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
@@ -30,7 +30,23 @@ const SettingsPage: FC<PageProps> = ({ settings, dispatch, location }) => {
   }, []);
   const { name } = settings;
 
-  return <div className={styles.center}>Hello {name}</div>;
+  return (
+    <div className={styles.center}>
+      Hello {name}
+      <p>通过 `setPageNavBar` 修改背景色和右上角按钮</p>
+      <pre>{`setPageNavBar?.({
+      pagePath: location.pathname,
+      navBar: {
+        pageBackground: '#000000',
+        onLeftClick,
+        rightContent: [
+          <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
+          <Icon key="1" type="ellipsis" />,
+        ],
+      },
+    });`}</pre>
+    </div>
+  );
 };
 
 export default connect(({ settings }: { settings: SettingsModelState }) => ({ settings }))(
