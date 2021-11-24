@@ -14,5 +14,5 @@ export default {
   keepalive: ['/list'],
   packageId: 'com.alita.demos',
   displayName: 'alita-demos',
-  mobile5:true
+  mobile5: true,
 };
