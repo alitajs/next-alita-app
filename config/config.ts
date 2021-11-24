@@ -1,4 +1,4 @@
-const isSSR = true;
+const isSSR = false;
 const outputPath = 'dist/';
 const env = process.env.NODE_ENV;
 // 这里需要对应服务器地址
@@ -14,4 +14,5 @@ export default {
   keepalive: ['/list'],
   packageId: 'com.alita.demos',
   displayName: 'alita-demos',
+  mobile5:true
 };

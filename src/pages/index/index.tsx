@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import { WhiteSpace } from 'antd-mobile';
 import { Button } from 'antd';
+import { Button as Button5 } from 'antd-mobile5';
 
 import DynamicForm, {
   DformInput,
@@ -75,6 +76,7 @@ const UserName: FC = (props) => {
       </DynamicForm>
       <WhiteSpace />
       <Button onClick={() => form.submit()}>submit</Button>
+      <Button5>Antd Mobile@5 Button</Button5>
     </div>
   );
 };

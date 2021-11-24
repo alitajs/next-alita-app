@@ -31,7 +31,7 @@
     "@alita/react": "^0.1.0",
     "@alitajs/dform": "3.0.0-alpha.1",
     "@alitajs/list-view": "1.0.7",
-    "alita": "^2.8.18"
+    "alita": "2.8.27-beta.1"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
