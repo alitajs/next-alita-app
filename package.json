@@ -30,8 +30,9 @@
   "dependencies": {
     "@alita/react": "^0.1.0",
     "@alitajs/dform": "3.0.0-alpha.1",
+    "@alitajs/iframe": "^0.0.3",
     "@alitajs/list-view": "1.0.7",
-    "alita": "2.8.27-beta.1"
+    "alita": "2.8.27"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -51,6 +52,8 @@
     "@umijs/fabric": "2.0.6",
     "chalk": "^3.0.0",
     "concurrently": "^6.2.1",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-whitelist": "^1.3.5",
     "cross-env": "^6.0.3",
     "eslint": "6.8.0",
     "eslint-plugin-eslint-comments": "^3.1.2",
@@ -74,6 +77,14 @@
   "create-umi": {
     "ignore": [
       "create-umi-ignore.js"
+    ]
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "ios"
     ]
   }
 }

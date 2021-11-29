@@ -1,8 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
-import { WhiteSpace } from 'antd-mobile';
-import { Button } from 'antd';
+import { WhiteSpace, Button } from 'antd-mobile';
+import { Button as AButton } from 'antd';
 import { Button as Button5 } from 'antd-mobile5';
-
 import DynamicForm, {
   DformInput,
   DformPicker,
@@ -13,6 +12,7 @@ import DynamicForm, {
   ValidateErrorEntity,
   MultiplePicker,
 } from '@alitajs/dform';
+import IFrame from '@alitajs/iframe';
 
 const sexData = [
   { label: '男', value: 'man' },
@@ -61,6 +61,7 @@ const UserName: FC = (props) => {
   return (
     <div>
       <div>getInitialProps Data: {JSON.stringify(result)}</div>
+      <IFrame height={'150px'} src="http://www.baidu.com"></IFrame>
       <DynamicForm {...formProps}>
         <DformInput
           fieldProps="username"
@@ -75,8 +76,11 @@ const UserName: FC = (props) => {
         <MultiplePicker fieldProps="motion" placeholder="请选择" title="特长" data={motionData} />
       </DynamicForm>
       <WhiteSpace />
-      <Button onClick={() => form.submit()}>submit</Button>
-      <Button5>Antd Mobile@5 Button</Button5>
+      <AButton onClick={() => form.submit()}>Antd Button</AButton>
+      <Button type="primary">Antd Mobile@2 Button</Button>
+      <Button5 block color="primary" size="large">
+        Antd Mobile@5 Button
+      </Button5>
     </div>
   );
 };
