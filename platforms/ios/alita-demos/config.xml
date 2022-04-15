@@ -27,10 +27,10 @@
     </feature>
     <name>alita-demos</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A sample Alita application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Alita Team
     </author>
     <content src="index.html" />
     <access origin="*" />

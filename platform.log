@@ -1,0 +1,81 @@
+➜  next-alita-app git:(master) ✗ yarn cordova-init
+yarn run v1.22.15
+$ alita cordova --init
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+cordova init success,please run "alita cordova --ios" or "alita cordova --android"  to add cordova platforms
+✨  Done in 1.29s.
+➜  next-alita-app git:(master) ✗ yarn cordova-add-ios
+yarn run v1.22.15
+$ alita cordova --ios
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+cordova add ios platforms ...
+exec error: Error: Command failed: cordova platforms add ios
+Platform ios already added.
+
+You have been opted out of telemetry. To change this, run: cordova telemetry on.
+Using cordova-fetch for cordova-ios@^6.2.0
+
+Platform ios already added.
+
+✨  Done in 6.43s.
+➜  next-alita-app git:(master) ✗ yarn build-ios
+yarn run v1.22.15
+$ alita build
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+cordova platform use ios
+cordova serve(pid:13139)
+
+✔ Webpack
+  Compiled successfully in 12.17s
+
+exec error: Error: Command failed: cordova build ios
+Current working directory is not a Cordova-based project.
+
+You have been opted out of telemetry. To change this, run: cordova telemetry on.
+
+Current working directory is not a Cordova-based project.
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+ DONE  Compiled successfully in 12171ms                                  下午2:37:21
+
+ File             Size                         Gzipped
+
+ www/umi.js       1.3 MB                       392.5 KB
+ www/umi.css      149.1 KB                     19.5 KB
+
+  Images and other types of assets omitted.
+
+[alita]: success
+[alita]: run build cordova ...
+
+You have been opted out of telemetry. To change this, run: cordova telemetry on.
+List simulator targets
+Running command: xcrun simctl list --json
+Select last emulator from list as default.
+List simulator targets
+Running command: xcrun simctl list --json
+No simulator found for ". Falling back to the default target.
+Building for "iPhone 13" Simulator (com.apple.CoreSimulator.SimDeviceType.iPhone-13, iPhone-13).
+Building project: /Users/congxiaochen/Documents/next-alita-app/platforms/ios/alita-demos.xcworkspace
+        Configuration: Debug
+        Platform: emulator
+        Target: iPhone 13
+Running command: xcodebuild -workspace alita-demos.xcworkspace -scheme alita-demos -configuration Debug -sdk iphonesimulator -destination platform=iOS Simulator,name=iPhone 13 build CONFIGURATION_BUILD_DIR=/Users/congxiaochen/Documents/next-alita-app/platforms/ios/build/emulator SHARED_PRECOMPS_DIR=/Users/congxiaochen/Documents/next-alita-app/platforms/ios/build/sharedpch
+
+** BUILD SUCCEEDED **

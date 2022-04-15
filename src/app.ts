@@ -8,6 +8,10 @@ import ListBlue from './assets/demoIcon/list1.png';
 import SetGary from './assets/demoIcon/setting.png';
 import SetBlue from './assets/demoIcon/setting1.png';
 
+export function getKeepAlive() {
+  return ['/list'];
+}
+
 export const request = {
   prefix: '',
   method: 'post',
