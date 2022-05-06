@@ -9,7 +9,7 @@ import SetGary from './assets/demoIcon/setting.png';
 import SetBlue from './assets/demoIcon/setting1.png';
 
 export function getKeepAlive() {
-  return ['/list'];
+  return [/list/];
 }
 
 export const request = {

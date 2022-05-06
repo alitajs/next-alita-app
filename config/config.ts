@@ -1,5 +1,5 @@
 const isSSR = false;
-const isCordova = true;
+const isCordova = false;
 const outputPath = isCordova ? 'www' : 'dist';
 const env = process.env.NODE_ENV;
 // 这里需要对应服务器地址
@@ -12,7 +12,7 @@ export default {
   // ssr: isSSR && !isCordova ? {} : false,
   outputPath: outputPath,
   publicPath: isSSR && !isCordova ? path : './',
-  keepalive: [],
+  keepalive: [/list/],
   packageId: 'com.alita.demos',
   displayName: 'alita-demos',
   // mobile5: true,
