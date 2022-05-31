@@ -3,7 +3,7 @@ const isCordova = false;
 const outputPath = isCordova ? 'www' : 'dist';
 const env = process.env.NODE_ENV;
 // 这里需要对应服务器地址
-const path = env === 'development' ? 'http://127.0.0.1:8000/' : outputPath;
+const path = env === 'development' ? 'http://127.0.0.1:8000/' : `${outputPath}/`;
 
 export default {
   appType: isCordova ? 'cordova' : 'h5',
